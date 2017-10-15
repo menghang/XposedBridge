@@ -50,6 +50,10 @@ android {
     }
 }
 
+dependencies {
+    provided fileTree(dir: 'libs', include: ['*.jar'])
+}
+
 task generateDocs(type: Javadoc, dependsOn: 'compileReleaseSources') {
     source = file('src/main/java')
     ext.templateDir = file('doclib/template')

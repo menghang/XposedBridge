@@ -65,6 +65,9 @@ public final class XposedBridge {
 	/*package*/ static final CopyOnWriteSortedSet<XC_LoadPackage> sLoadedPackageCallbacks = new CopyOnWriteSortedSet<>();
 	/*package*/ static final CopyOnWriteSortedSet<XC_InitPackageResources> sInitPackageResourcesCallbacks = new CopyOnWriteSortedSet<>();
 
+        //MIUI
+        public static long BOOT_START_TIME = 0x0L;
+
 	private XposedBridge() {}
 
 	/**
